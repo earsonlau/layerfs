@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "id": "workspace-setup",
+  "name": "LayerFS Workspace Setup",
+  "summary": "Copy local files, install deps, and trust direnv/mise into a LayerFS workspace.",
+  "authors": [{ "name": "eason lau", "github": "earsonlau" }],
+  "license": "MIT",
+  "repository": "https://github.com/earsonlau/workspace-setup",
+  "tags": ["workspace", "setup", "direnv", "mise", "bootstrap"],
+  "platforms": ["linux", "macos", "windows-wsl2"],
+  "uses": ["agent"],
+  "status": "preview",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "commit": "44d77f7a93b390601138ae2961812096a49b4310",
+      "date": "2026-10-24",
+      "layerfs": {
+        "version": "v1.1.0",
+        "commit": "9f97a7ec95b662e9cb288704afa165feff132cfa"
+      },
+      "notes": "First listing: init/check/apply with .layerfs escape refusal and symlink harden."
+    }
+  ]
+}
